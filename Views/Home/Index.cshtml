@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Home - Student Course Registration System";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3 shadow-sm border">
+    <div class="container-fluid py-3 text-center">
+        <span class="badge bg-primary px-3 py-2 mb-3 text-uppercase tracking-wider">Marwadi University · NAAC A+</span>
+        <h1 class="display-5 fw-bold text-dark">Student Course Registration System</h1>
+        <p class="col-md-9 fs-5 mx-auto text-secondary">
+            A self-learning laboratory implementation of Microsoft ASP.NET Core MVC demonstrating Model–View–Controller architecture, Razor views, Tag Helpers, strong model binding, and server-side Data Annotation validation.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a asp-controller="Student" asp-action="Create" class="btn btn-primary btn-lg px-4 shadow-sm">
+                Register Student &rarr;
+            </a>
+            <a asp-controller="Student" asp-action="Index" class="btn btn-outline-secondary btn-lg px-4">
+                View Student Directory
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-md-stretch g-4 mb-4">
+    <div class="col-md-4">
+        <div class="h-100 p-4 bg-white border rounded-3 shadow-sm">
+            <h4 class="text-primary mb-3">Model–View–Controller</h4>
+            <p class="text-muted">
+                Architectural separation of concerns where <code>Student</code> model stores student entity state, <code>StudentController</code> handles incoming HTTP traffic and business logic, and Razor Views render the user interface.
+            </p>
+            <span class="badge bg-light text-primary border">MVC Architecture</span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="h-100 p-4 bg-white border rounded-3 shadow-sm">
+            <h4 class="text-success mb-3">Data Annotations</h4>
+            <p class="text-muted">
+                Declarative attribute validation using <code>[Required]</code>, <code>[StringLength]</code>, <code>[Range]</code>, and <code>[EmailAddress]</code>. Evaluated cleanly on the server via <code>ModelState.IsValid</code>.
+            </p>
+            <span class="badge bg-light text-success border">Validation Engine</span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="h-100 p-4 bg-white border rounded-3 shadow-sm">
+            <h4 class="text-info mb-3">Razor &amp; Tag Helpers</h4>
+            <p class="text-muted">
+                Modern ASP.NET Core Razor views leveraging built-in Tag Helpers such as <code>asp-for</code>, <code>asp-action</code>, <code>asp-controller</code>, and <code>asp-validation-for</code> for seamless HTML generation.
+            </p>
+            <span class="badge bg-light text-info border">Razor Engine</span>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 bg-primary text-white rounded-3 shadow-sm">
+    <div class="card-body p-4 text-center">
+        <h5 class="card-title fw-bold">Academic Activity Information</h5>
+        <p class="card-text mb-0">
+            <strong>Student:</strong> Akshar Parekh &nbsp;|&nbsp;
+            <strong>Enrollment No:</strong> 92400120523 &nbsp;|&nbsp;
+            <strong>Subject:</strong> 01CE1523 - .NET Technologies &nbsp;|&nbsp;
+            <strong>Semester:</strong> 5 (Batch B)
+        </p>
+    </div>
+</div>
